@@ -1,0 +1,31 @@
+.main-container {
+    box-sizing: content-box;
+    border: 1px solid silver;
+    overflow: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .col-l-3 {
+    border: 1px solid silver;
+    box-sizing: border-box;
+    max-width: calc(33.33% - (10px * 2));
+    margin: 10px;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-m-6 {
+    max-width: 100%;
+    float: left;
+    width: calc(50% - (10px * 2));
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+  }
+}
